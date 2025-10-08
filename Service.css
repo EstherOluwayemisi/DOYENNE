@@ -447,3 +447,162 @@ button {
 .reserve-btn:hover {
   background: #8a5a2f;
 }
+
+/* =======================
+   RESPONSIVENESS
+   ======================= */
+
+/* ====== Tablets (≤1024px) ====== */
+@media (max-width: 1024px) {
+  .contain {
+    padding: 1rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .logo-list {
+    gap: 25px;
+  }
+
+  .price-list-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 4rem;
+  }
+
+  .appointment-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer {
+    padding: 50px 4rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-hair {
+    font-size: 50px;
+    padding-top: 10rem;
+  }
+
+  .card {
+    padding: 60px 40px;
+  }
+}
+
+/* ====== Mobile (≤768px) ====== */
+@media (max-width: 768px) {
+  .contain {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .logo-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .section-hair {
+    font-size: 36px;
+    padding-top: 8rem;
+    text-align: center;
+  }
+
+  .price-list-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 2rem;
+  }
+
+  .appointment-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  form,
+  .opening-hours {
+    width: 100%;
+  }
+
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-h2 {
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .footer {
+    padding: 40px 2rem;
+  }
+
+  .footer h3 {
+    font-size: 20px;
+  }
+
+  .footer h4 {
+    font-size: 18px;
+  }
+}
+
+/* ====== Small Mobile (≤480px) ====== */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 16px;
+  }
+
+  .Home,
+  .logo-list li {
+    font-size: 18px;
+  }
+
+  .section-hair {
+    font-size: 30px;
+    padding-top: 7rem;
+  }
+
+  .price-list-container {
+    padding: 20px 1rem;
+  }
+
+  .card {
+    padding: 40px 25px;
+  }
+
+  .appoint-contain {
+    font-size: 22px;
+  }
+
+  .testimonial-h2 {
+    font-size: 1.8rem;
+  }
+
+  .footer {
+    padding: 30px 1rem;
+  }
+
+  .reserve-btn {
+    width: 100%;
+    padding: 10px;
+  }
+}

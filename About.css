@@ -20,6 +20,14 @@ body {
   padding: 1.5rem 3rem 1.5rem 3rem;
   /* padding: 50px 8rem; */
 }
+.hamburger-menu {
+  display: none;
+  /* flex-direction: column;
+  justify-content: space-between; */
+  /* width: 25px;
+  height: 18px; */
+  /* cursor: pointer; */
+}
 .logo-icon {
   display: flex;
   gap: 20px;
@@ -114,13 +122,13 @@ body {
   font-style: Regular;
   font-size: 20px;
   margin-bottom: 20px;
-} 
+}
 .text-story4 li {
   margin-bottom: 40px;
 }
-.text-story4 strong{
- color: #ad7e51;
-} 
+.text-story4 strong {
+  color: #ad7e51;
+}
 .footer {
   padding: 80px 8rem;
 }
@@ -197,4 +205,160 @@ body {
 }
 .reserve-btn:hover {
   background: #8a5a2f;
+}
+@media only screen and(max-width: 600px) {
+  .hamburger-menu {
+    display: block;
+  }
+  .logo-list {
+    display: none;
+  }
+}
+
+/* =======================
+   RESPONSIVENESS
+   ======================= */
+
+/* ✅ Fix: add space between 'and' + condition */
+@media only screen and (max-width: 1024px) {
+  .contain {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 1rem 2rem;
+  }
+
+  .logo-list {
+    gap: 20px;
+  }
+
+  .section-hair {
+    font-size: 50px;
+    padding-top: 12rem;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .container2,
+  .container-reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer {
+    padding: 60px 4rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* ===== Tablets and Large Mobiles (≤768px) ===== */
+@media only screen and (max-width: 768px) {
+  .contain {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .logo-list {
+    gap: 15px;
+  }
+
+  .section-hair {
+    font-size: 40px;
+    padding-top: 8rem;
+    padding-left: 0;
+  }
+
+  .section {
+    padding: 40px 2rem;
+  }
+
+  .text-story {
+    font-size: 36px;
+  }
+
+  .text-story2,
+  .text-story3,
+  .text-story4 {
+    font-size: 18px;
+  }
+
+  .footer {
+    padding: 40px 2rem;
+  }
+
+  .footer h3 {
+    font-size: 20px;
+  }
+
+  .footer h4 {
+    font-size: 18px;
+  }
+}
+
+/* ===== Small Mobiles (≤600px) ===== */
+@media only screen and (max-width: 600px) {
+  /* ✅ Show hamburger menu */
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    width: 28px;
+    height: 20px;
+    position: relative;
+  }
+
+  /* Hamburger bars */
+  .hamburger-menu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #7e6e67;
+    border-radius: 3px;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  /* Hide nav list by default */
+  .logo-list {
+    display: none;
+    flex-direction: column;
+    background: #fff3ea;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  /* Show nav when active */
+  .logo-list.active {
+    display: flex;
+  }
+
+  .logo-list li {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  .section-hair {
+    font-size: 30px;
+    padding-top: 6rem;
+  }
+
+  .text-story {
+    font-size: 28px;
+  }
+
+  .footer {
+    padding: 30px 1rem;
+  }
+
+  .reserve-btn {
+    width: 100%;
+    padding: 10px;
+  }
 }
