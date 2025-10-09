@@ -22,6 +22,7 @@ body {
 }
 .hamburger-menu {
   display: none;
+  justify-content: space-between;
   /* flex-direction: column;
   justify-content: space-between; */
   /* width: 25px;
@@ -72,16 +73,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* text-align: center; */
   font-family: "Poppins";
   font-weight: 700;
   font-style: Bold;
   font-size: 70px;
   padding-top: 17rem;
-  padding-left: 18rem;
 }
 .section {
   padding: 70px 8rem;
   margin-top: 40px;
+}
+.text{
+  align-items: center;
+  margin-bottom: 40px;
 }
 .container2 {
   display: flex;
@@ -102,8 +107,8 @@ body {
   font-family: "Poppins";
   font-weight: 400;
   font-style: Regular;
-  font-size: 20px;
-  margin-bottom: 20px;
+  /* font-size: 20px; */
+  /* margin-bottom: 20px; */
 }
 .text-story3 {
   font-family: "Poppins";
@@ -121,7 +126,7 @@ body {
   font-weight: 400;
   font-style: Regular;
   font-size: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .text-story4 li {
   margin-bottom: 40px;
@@ -219,98 +224,19 @@ body {
    RESPONSIVENESS
    ======================= */
 
-/* ✅ Fix: add space between 'and' + condition */
-@media only screen and (max-width: 1024px) {
-  .contain {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 1rem 2rem;
-  }
-
-  .logo-list {
-    gap: 20px;
-  }
-
-  .section-hair {
-    font-size: 50px;
-    padding-top: 12rem;
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .container2,
-  .container-reverse {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer {
-    padding: 60px 4rem;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
 /* ===== Tablets and Large Mobiles (≤768px) ===== */
-@media only screen and (max-width: 768px) {
-  .contain {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-  }
-
-  .logo-list {
-    gap: 15px;
-  }
-
-  .section-hair {
-    font-size: 40px;
-    padding-top: 8rem;
-    padding-left: 0;
-  }
-
-  .section {
-    padding: 40px 2rem;
-  }
-
-  .text-story {
-    font-size: 36px;
-  }
-
-  .text-story2,
-  .text-story3,
-  .text-story4 {
-    font-size: 18px;
-  }
-
-  .footer {
-    padding: 40px 2rem;
-  }
-
-  .footer h3 {
-    font-size: 20px;
-  }
-
-  .footer h4 {
-    font-size: 18px;
-  }
-}
 
 /* ===== Small Mobiles (≤600px) ===== */
 @media only screen and (max-width: 600px) {
   /* ✅ Show hamburger menu */
   .hamburger-menu {
     display: block;
-    cursor: pointer;
-    width: 28px;
-    height: 20px;
-    position: relative;
+  }
+  .contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 25px;
   }
 
   /* Hamburger bars */
@@ -325,7 +251,7 @@ body {
   }
 
   /* Hide nav list by default */
-  .logo-list {
+  .logo-icon {
     display: none;
     flex-direction: column;
     background: #fff3ea;
@@ -352,7 +278,10 @@ body {
   .text-story {
     font-size: 28px;
   }
-
+  .image img {
+    width: 100%;
+    max-width: 400px;
+  }
   .footer {
     padding: 30px 1rem;
   }
