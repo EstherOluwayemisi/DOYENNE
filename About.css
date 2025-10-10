@@ -61,8 +61,12 @@ body {
   font-family: "Poppins", sans-serif;
   color: #7e6e67;
 }
+a {
+  text-decoration: none;
+  color: inherit; /* This will make the link color the same as the text color */
+}
 .section-img {
-  background-image: url(Asset/Rectangle\ 121.png);
+  background-image: url(Asset/web\ 121.webp);
   background-repeat: no-repeat;
   background-position: contain;
   background-size: cover;
@@ -84,7 +88,7 @@ body {
   padding: 70px 8rem;
   margin-top: 40px;
 }
-.text{
+.text {
   align-items: center;
   margin-bottom: 40px;
 }
@@ -107,7 +111,7 @@ body {
   font-family: "Poppins";
   font-weight: 400;
   font-style: Regular;
-  /* font-size: 20px; */
+  font-size: 20px;
   /* margin-bottom: 20px; */
 }
 .text-story3 {

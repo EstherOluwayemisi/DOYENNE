@@ -56,9 +56,9 @@ body {
   color: #7e6e67;
 }
 .section-img {
-  background-image: url(Asset/Rectangle\ 73.png);
+  background-image: url(Asset/web73.webp);
   background-repeat: no-repeat;
-  background-position: contain;
+  background-position: center;
   background-size: cover;
   height: 100vh;
   color: #f2f2f2;
@@ -119,15 +119,13 @@ body {
   transition: transform 0.7s ease;
   /* transition: all .5s; */
 }
+a {
+  text-decoration: none;
+    color: inherit; /* This will make the link color the same as the text color */
+}
 .Haircare-services:hover {
   transform: translate(20px 20px);
-  /* transform: rotate(0); */
 }
-/* @keyframes sideLeft{
-  from{
-    transform: translateX(300%);
-  }
-} */
 .Haircare-name {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -267,7 +265,7 @@ body {
   margin-bottom: 30px;
 }
 .btn4 {
-  margin-bottom:5px;
+  margin-bottom: 5px;
   background: #595959;
   color: #f4d6af;
   /* padding: 8px 15px; */
@@ -530,7 +528,9 @@ body {
 }
 /* Social Icons */
 .social-icons {
-  margin-top: 15px;
+  /* margin-top: 15px; */
+  /* text-align: center; */
+  align-items: center;
 }
 .social-icons a:hover {
   background: #b57a42;
@@ -583,6 +583,9 @@ body {
     display: block;
     width: 100%;
     padding: 8px 0;
+  }
+  .logo-list.active {
+    display: flex;
   }
   .logo {
     font-size: 16px;
