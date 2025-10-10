@@ -24,6 +24,11 @@ body {
   gap: 1rem;
   align-items: center;
 }
+.logo-icon2 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 .logo {
   font-weight: 700;
   font-style: Bold;
@@ -54,10 +59,6 @@ body {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
   color: #7e6e67;
-}
-a {
-  text-decoration: none;
-  color: inherit; /* This will make the link color the same as the text color */
 }
 .logo-list li a.active{
 color:#404040
@@ -315,7 +316,86 @@ color:#404040
   font-weight: 600;
   width: fit-content;
 }
-
 .submit-btn:hover {
   background: #8a7567;
+}
+.footer {
+  padding: 80px 8rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.social-icons {
+  position: relative;
+  top: 70px;
+}
+.footer h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+}
+.footer h4 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+}
+.footer p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer ul li {
+  margin-bottom: 8px;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.footer ul li a:hover {
+  color: #b57a42;
+}
+/* Social Icons */
+.social-icons {
+  /* margin-top: 15px; */
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+}
+.social-icons a:hover {
+  background: #b57a42;
+  color: #fff;
+}
+/* Reserve Button */
+.reserve-btn {
+  background: #b57a42;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.reserve-btn:hover {
+  background: #8a5a2f;
 }

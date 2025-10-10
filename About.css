@@ -61,11 +61,14 @@ body {
   font-family: "Poppins", sans-serif;
   color: #7e6e67;
 }
-/* a {
-  text-decoration: none;
-  color: inherit; 
-  /* This will make the link color the same as the text color
-/* }  */
+.logo-icon2 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.logo-list li a.active {
+  color: #404040;
+}
 .section-img {
   background-image: url(Asset/web\ 121.webp);
   background-repeat: no-repeat;

@@ -47,6 +47,11 @@ body {
   font-size: 24px;
   font-family: "Poppins", sans-serif;
 }
+.logo-icon2 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 .logo-list li {
   font-weight: 700;
   font-style: Bold;
@@ -54,9 +59,10 @@ body {
   font-family: "Poppins", sans-serif;
   color: #7e6e67;
 }
-a {
+.logo-list li a.active {
+  color: #404040;
   text-decoration: none;
-  color: inherit; /* This will make the link color the same as the text color */
+  color: inherit;
 }
 .section-img {
   background-image: url(Asset/Rectangle\ 103.png);

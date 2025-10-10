@@ -73,9 +73,6 @@ body {
   display: flex;
   align-items: center;
   padding: 3rem;
-  /* justify-content: center; */
-  /* padding-top: 13rem;
-  padding-left: 8rem; */
 }
 .section-hair {
   font-family: "Poppins", sans-serif;
@@ -83,11 +80,6 @@ body {
   font-style: Bold;
   font-size: 40px;
 }
-/* .section-text{
-  display: flex;
-  flex-direction: column;
-   justify-content: center;
-} */
 .section-p {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -164,9 +156,9 @@ a {
   background-color: #bc8c4e;
   border: none;
   border-radius: 15px;
-  width: 50%
+  width: 50%;
 }
-.price-list{
+.price-list {
   width: 40%;
   padding: 2rem;
 }
@@ -178,8 +170,6 @@ a {
   font-style: italic;
   width: 100%;
   text-align: center;
-  
-
 }
 .Our-prices {
   font-weight: bold;
@@ -206,7 +196,6 @@ a {
   padding-left: 30px;
 }
 .Sarah img {
-  /* width: 30px; */
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease;
@@ -225,15 +214,14 @@ a {
   font-size: 20px;
 }
 .btn2 {
-  display: block;
   margin: 30px auto 0 auto;
   background: #595959;
-  color: #fff;
+   color: #f4d6af;
   border: none;
-  padding: 12px 30px;
+  padding: 12px 35px;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 25px;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -251,7 +239,6 @@ a {
 .about-images {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* margin-top: 50px; */
   gap: 15px;
   transition: transform 0.4s ease;
 }
@@ -293,7 +280,6 @@ a {
   margin-bottom: 5px;
   background: #595959;
   color: #f4d6af;
-  /* padding: 8px 15px; */
   border: none;
   padding: 12px 35px;
   border: none;
@@ -322,9 +308,6 @@ a {
 .meet-contain {
   display: flex;
   justify-content: center;
-
-  /* padding: 50px 8rem; */
-  /* margin-top: 90px; */
   gap: 25px;
 }
 .meet-contain div {
@@ -401,7 +384,7 @@ a {
   background-color: #dfb39f;
   margin-top: 80px;
   /* height: 10vh; */
-  
+
   /* padding: 50px 8rem; */
   align-items: center;
   /* gap: 30px; */
@@ -419,8 +402,8 @@ a {
   text-align: center;
   font-family: "Montagu Slab", serif;
 }
-.appoint{
-  padding:3rem 3rem; 
+.appoint {
+  padding: 3rem 3rem;
   display: flex;
   justify-content: space-between;
 }
@@ -675,6 +658,9 @@ a {
     width: 100%;
     padding: 25px;
   }
+  .price-list {
+    width: 100%;
+  }
   .Doyenne-view {
     font-size: 0.95rem;
     line-height: 1.6;
@@ -749,10 +735,16 @@ a {
   }
   .about-appointment {
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
     gap: 20px;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
     /* margin: 60px 20px; */
+  }
+  .appoint {
+    flex-direction: column;
+    /* padding:3rem 3rem;  */
+    /* display: flex; */
+    /* justify-content: space-between; */
   }
   .appointment {
     font-size: 1.4rem;
@@ -797,7 +789,13 @@ a {
   }
 
   .footer {
-    padding: 50px 25px 25px;
+    padding: 50px 25px;
+  }
+  .footer-contain h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
   }
 
   .social-icons {
