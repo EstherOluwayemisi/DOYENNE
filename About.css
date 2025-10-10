@@ -61,10 +61,11 @@ body {
   font-family: "Poppins", sans-serif;
   color: #7e6e67;
 }
-a {
+/* a {
   text-decoration: none;
-  color: inherit; /* This will make the link color the same as the text color */
-}
+  color: inherit; 
+  /* This will make the link color the same as the text color
+/* }  */
 .section-img {
   background-image: url(Asset/web\ 121.webp);
   background-repeat: no-repeat;

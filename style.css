@@ -24,6 +24,11 @@ body {
   gap: 1rem;
   align-items: center;
 }
+.logo-icon2 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 .logo {
   font-weight: 700;
   font-style: Bold;
@@ -55,6 +60,9 @@ body {
   font-family: "Poppins", sans-serif;
   color: #7e6e67;
 }
+.logo-list li a.active {
+  color: #404040;
+}
 .section-img {
   background-image: url(Asset/web73.webp);
   background-repeat: no-repeat;
@@ -62,26 +70,34 @@ body {
   background-size: cover;
   height: 100vh;
   color: #f2f2f2;
-  padding-top: 13rem;
-  padding-left: 8rem;
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  /* justify-content: center; */
+  /* padding-top: 13rem;
+  padding-left: 8rem; */
 }
 .section-hair {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: Bold;
   font-size: 40px;
-  width: 50%;
 }
+/* .section-text{
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+} */
 .section-p {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: Medium;
   font-size: 20px;
   color: #af7f6a;
-  margin-bottom: 70px;
+  margin-bottom: 1.5rem;
 }
 .btn {
-  padding: 20px 40px;
+  padding: 1rem 1.2rem;
   background-color: #bc8c4e;
   border: none;
   color: #f2f2f2;
@@ -90,7 +106,7 @@ body {
   font-weight: 500;
   font-style: Medium;
   font-size: 20px;
-  height: 50%;
+  /* height: 50%; */
   text-align: center;
 }
 .section-service {
@@ -115,13 +131,13 @@ body {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 120px;
+  margin-top: 2.5rem;
   transition: transform 0.7s ease;
   /* transition: all .5s; */
 }
 a {
   text-decoration: none;
-    color: inherit; /* This will make the link color the same as the text color */
+  color: inherit; /* This will make the link color the same as the text color */
 }
 .Haircare-services:hover {
   transform: translate(20px 20px);
@@ -142,18 +158,28 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 70px 8rem;
+  width: 100%;
 }
 .prices-btn1 {
   background-color: #bc8c4e;
   border: none;
   border-radius: 15px;
+  width: 50%
+}
+.price-list{
+  width: 40%;
+  padding: 2rem;
 }
 .Doyenne-view {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  margin-top: 35px;
+  /* margin-top: 35px; */
   font-size: 20px;
   font-style: italic;
+  width: 100%;
+  text-align: center;
+  
+
 }
 .Our-prices {
   font-weight: bold;
@@ -237,7 +263,6 @@ a {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: SemiBold;
-  text-align: center;
   font-size: 2rem;
   font-weight: 700;
   color: #222;
@@ -284,6 +309,7 @@ a {
 .meet-container {
   background-color: white;
   text-align: center;
+  padding-bottom: 4rem;
 }
 .about-expert {
   font-family: "Poppins", sans-serif;
@@ -291,12 +317,14 @@ a {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
+  margin-bottom: 5rem;
 }
 .meet-contain {
   display: flex;
   justify-content: center;
-  padding: 50px 8rem;
-  margin-top: 90px;
+
+  /* padding: 50px 8rem; */
+  /* margin-top: 90px; */
   gap: 25px;
 }
 .meet-contain div {
@@ -372,16 +400,15 @@ a {
 .about-appointment {
   background-color: #dfb39f;
   margin-top: 80px;
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
+  /* height: 10vh; */
+  
   /* padding: 50px 8rem; */
   align-items: center;
-  gap: 30px;
-  padding: 60px 20px;
-  border-radius: 16px;
-  margin: 80px auto;
-  max-width: 1000px;
+  /* gap: 30px; */
+  /* padding: 60px 20px; */
+  /* border-radius: 16px; */
+  /* margin: 80px auto; */
+  /* max-width: 1000px; */
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 .appointment {
@@ -392,6 +419,11 @@ a {
   text-align: center;
   font-family: "Montagu Slab", serif;
 }
+.appoint{
+  padding:3rem 3rem; 
+  display: flex;
+  justify-content: space-between;
+}
 .btn5 {
   font-family: "Montserrat";
   background-color: #404040;
@@ -401,7 +433,7 @@ a {
   cursor: pointer;
   font-weight: 600;
   font-style: SemiBold;
-  height: 50px;
+  /* height: 50px; */
   padding: 10px 15px;
   font-size: 24px;
   text-align: center;
@@ -530,6 +562,7 @@ a {
 .social-icons {
   /* margin-top: 15px; */
   /* text-align: center; */
+  display: flex;
   align-items: center;
 }
 .social-icons a:hover {
@@ -591,15 +624,12 @@ a {
     font-size: 16px;
   }
   .section-img {
-    background-image: url(Asset/Rectangle\ 73.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     height: 50vh;
-    padding: 100px 15px;
+    padding: 100px 20px;
   }
+
   .section-hair {
-    font-size: 18px;
+    font-size: 1.5rem;
     margin-bottom: 10px;
   }
   .section-p {
@@ -626,6 +656,8 @@ a {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    margin-top: 0px;
+    width: 100%;
   }
   .Haircare-name {
     font-size: 1.5rem;
@@ -687,17 +719,16 @@ a {
     margin-bottom: 25px;
   }
   .meet-container {
-    /* padding: 50px 20px; */
     align-items: center;
   }
   .about-expert {
     font-size: 1.6rem;
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
   }
   .meet-contain {
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     gap: 20px;
   }
   .card-content {

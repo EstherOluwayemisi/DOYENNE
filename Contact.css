@@ -59,6 +59,9 @@ a {
   text-decoration: none;
   color: inherit; /* This will make the link color the same as the text color */
 }
+.logo-list li a.active{
+color:#404040
+}
 .section-img {
   background-image: url(Asset/Rectangle\ 131.webp);
   background-repeat: no-repeat;
