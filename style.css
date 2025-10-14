@@ -783,11 +783,10 @@ a {
     height: 35px;
   }
   .footer-container {
-    grid-template-columns: 1fr; /* stack vertically */
+    grid-template-columns: 1fr;
     gap: 40px;
     text-align: center;
   }
-
   .footer {
     padding: 50px 25px;
   }

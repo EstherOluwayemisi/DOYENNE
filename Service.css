@@ -498,6 +498,17 @@ button {
     align-items: center;
     width: 100%;
   }
+  .logo-list li a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+  }
+  .logo-list.active {
+    display: flex;
+  }
+  .logo {
+    font-size: 16px;
+  }
   .section-hair {
     font-size: 2rem;
     align-items: center;
