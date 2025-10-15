@@ -751,6 +751,10 @@ a {
   .right-location img {
     height: 35px;
   }
+  .footer{
+    display: flex;
+    justify-content: center;
+  }
   .footer-container {
     gap: 30px;
     flex-direction: column;
