@@ -125,11 +125,10 @@ body {
   gap: 15px;
   margin-top: 2.5rem;
   transition: transform 0.7s ease;
-  /* transition: all .5s; */
 }
 a {
   text-decoration: none;
-  color: inherit; /* This will make the link color the same as the text color */
+  color: inherit; 
 }
 .Haircare-services:hover {
   transform: translate(20px 20px);
@@ -165,7 +164,6 @@ a {
 .Doyenne-view {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  /* margin-top: 35px; */
   font-size: 20px;
   font-style: italic;
   width: 100%;
@@ -216,7 +214,7 @@ a {
 .btn2 {
   margin: 30px auto 0 auto;
   background: #595959;
-   color: #f4d6af;
+  color: #f4d6af;
   border: none;
   padding: 12px 35px;
   font-size: 1rem;
@@ -383,15 +381,7 @@ a {
 .about-appointment {
   background-color: #dfb39f;
   margin-top: 80px;
-  /* height: 10vh; */
-
-  /* padding: 50px 8rem; */
   align-items: center;
-  /* gap: 30px; */
-  /* padding: 60px 20px; */
-  /* border-radius: 16px; */
-  /* margin: 80px auto; */
-  /* max-width: 1000px; */
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 .appointment {
@@ -416,7 +406,6 @@ a {
   cursor: pointer;
   font-weight: 600;
   font-style: SemiBold;
-  /* height: 50px; */
   padding: 10px 15px;
   font-size: 24px;
   text-align: center;
@@ -490,69 +479,57 @@ a {
   font-size: 12px;
 }
 .footer {
-  padding: 80px 8rem;
+  padding: 4rem 8rem;
 }
-
 .footer-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
 }
-.social-icons {
-  position: relative;
-  top: 70px;
-}
-.footer h3 {
+.footer-contain h2 {
+  margin-bottom: 17px;
   font-weight: bold;
-  margin-bottom: 15px;
   font-family: "Poppins";
   font-weight: 700;
   font-style: Bold;
   font-size: 24px;
 }
-.footer h4 {
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #000;
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: 20px;
-}
-.footer p {
+.footer-contain p {
   font-family: "Poppins";
   font-weight: 400;
   font-style: Regular;
   font-size: 16px;
 }
-.footer ul {
+.footer-col h4 {
+  margin-bottom: 17px;
+  font-weight: bold;
+  color: #000;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+}
+.footer-col ul {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
-.footer ul li {
-  margin-bottom: 8px;
+.footer-col li {
+  margin: 8px 0;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
 }
-.footer ul li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
-  transition: 0.3s;
-}
-.footer ul li a:hover {
-  color: #b57a42;
-}
-/* Social Icons */
 .social-icons {
-  /* margin-top: 15px; */
-  /* text-align: center; */
   display: flex;
-  align-items: center;
+  margin-top: 5rem;
+  gap: 15px;
 }
-.social-icons a:hover {
-  background: #b57a42;
-  color: #fff;
+.time {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
 }
-/* Reserve Button */
 .reserve-btn {
   background: #b57a42;
   font-family: "Montserrat";
@@ -714,7 +691,6 @@ a {
   .meet-contain {
     flex-direction: column;
     align-items: center;
-    /* margin-top: 20px; */
     gap: 20px;
   }
   .card-content {
@@ -735,23 +711,16 @@ a {
   }
   .about-appointment {
     flex-direction: column;
-    /* text-align: center; */
     gap: 20px;
-    /* padding: 40px 20px; */
-    /* margin: 60px 20px; */
   }
   .appoint {
     flex-direction: column;
-    /* padding:3rem 3rem;  */
-    /* display: flex; */
-    /* justify-content: space-between; */
   }
   .appointment {
     font-size: 1.4rem;
   }
   .btn5 {
     width: 50%;
-    /* padding: 12px 0; */
     font-size: 1.5rem;
     margin-top: 20px;
   }
@@ -783,27 +752,23 @@ a {
     height: 35px;
   }
   .footer-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 30px;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .footer-contain h2 {
+    font-size: 1rem;
+  }
+  .footer-col{
     text-align: center;
   }
-  .footer {
-    padding: 50px 25px;
-  }
-  .footer-contain h4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* text-align: center; */
-  }
-
   .social-icons {
     justify-content: center;
-    margin-bottom: 70px;
-  }
-
-  .reserve-btn {
+      margin-top:  2rem;
+}
+.reserve-btn {
     width: 80%;
-    margin: 0 auto;
-  }
+    margin-bottom: 2rem;
+     } 
 }
