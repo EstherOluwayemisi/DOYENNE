@@ -142,66 +142,57 @@ body {
   color: #ad7e51;
 }
 .footer {
-  padding: 80px 8rem;
+  padding: 4rem 8rem;
 }
-
 .footer-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
 }
-.social-icons {
-  position: relative;
-  top: 70px;
-}
-.footer h3 {
+.footer-contain h2 {
+  margin-bottom: 17px;
   font-weight: bold;
-  margin-bottom: 15px;
   font-family: "Poppins";
   font-weight: 700;
   font-style: Bold;
   font-size: 24px;
 }
-.footer h4 {
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #000;
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: 20px;
-}
-.footer p {
+.footer-contain p {
   font-family: "Poppins";
   font-weight: 400;
   font-style: Regular;
   font-size: 16px;
 }
-.footer ul {
+.footer-col h4 {
+  margin-bottom: 17px;
+  font-weight: bold;
+  color: #000;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+}
+.footer-col ul {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
-.footer ul li {
-  margin-bottom: 8px;
+.footer-col li {
+  margin: 8px 0;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
 }
-.footer ul li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
-  transition: 0.3s;
-}
-.footer ul li a:hover {
-  color: #b57a42;
-}
-/* Social Icons */
 .social-icons {
-  margin-top: 15px;
+  display: flex;
+  margin-top: 5rem;
+  gap: 15px;
 }
-.social-icons a:hover {
-  background: #b57a42;
-  color: #fff;
+.time {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
 }
-/* Reserve Button */
 .reserve-btn {
   background: #b57a42;
   font-family: "Montserrat";
@@ -278,25 +269,28 @@ body {
   .text-story3 {
     font-size: 1rem;
   }
-  .footer-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    text-align: center;
-  }
   .footer {
-    padding: 50px 25px;
-  }
-  .footer-contain h4 {
     display: flex;
-    align-items: center;
     justify-content: center;
+  }
+  .footer-container {
+    gap: 30px;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .footer-contain h2 {
+    font-size: 1rem;
+  }
+  .footer-col {
+    text-align: center;
   }
   .social-icons {
     justify-content: center;
-    margin-bottom: 70px;
+    margin-top: 2rem;
   }
   .reserve-btn {
     width: 80%;
-    margin: 0 auto;
+    margin-bottom: 2rem;
   }
 }

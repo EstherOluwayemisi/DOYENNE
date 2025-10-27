@@ -128,7 +128,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
 }
 .Haircare-services:hover {
   transform: translate(20px 20px);
@@ -562,9 +562,12 @@ a {
   }
   .hamburger-menu {
     display: block;
+    cursor: pointer;
   }
   .hamburger-menu img {
-    gap: 2rem;
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
   }
   .logo-icon {
     display: flex;
@@ -724,7 +727,6 @@ a {
     font-size: 1.5rem;
     margin-top: 20px;
   }
-
   .section-services {
     flex-direction: column;
     align-items: center;
@@ -751,7 +753,7 @@ a {
   .right-location img {
     height: 35px;
   }
-  .footer{
+  .footer {
     display: flex;
     justify-content: center;
   }
@@ -764,15 +766,15 @@ a {
   .footer-contain h2 {
     font-size: 1rem;
   }
-  .footer-col{
+  .footer-col {
     text-align: center;
   }
   .social-icons {
     justify-content: center;
-      margin-top:  2rem;
-}
-.reserve-btn {
+    margin-top: 2rem;
+  }
+  .reserve-btn {
     width: 80%;
     margin-bottom: 2rem;
-     } 
+  }
 }
